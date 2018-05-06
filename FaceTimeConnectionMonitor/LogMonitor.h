@@ -15,6 +15,7 @@
 @property (nonatomic, strong, readonly) NSTask* logreader;
 @property (nonatomic, strong, readonly) NSString* subsystem;
 @property (nonatomic, strong, readonly) NSString* messageFilter;
+@property (nonatomic, strong, readonly) NSString* stopFilter;
 @property (assign, nonatomic, readonly) NSUInteger num_occurrences;
 
 -(id)initWithSubsystemAndMessageFilter:(NSString*)subsystem messageFilter:(NSString *)messageFilter;

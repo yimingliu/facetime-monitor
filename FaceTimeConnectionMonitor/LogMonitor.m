@@ -9,8 +9,8 @@
 #import "LogMonitor.h"
 
 
-#define DEBUG_PREDICATE_SUBSYSTEM @"com.apple.WebInspector"
-#define DEBUG_PREDICATE_MESSAGE_FILTER @"RWIServiceDeviceConnection"
+//#define DEBUG_PREDICATE_SUBSYSTEM @"com.apple.WebInspector"
+//#define DEBUG_PREDICATE_MESSAGE_FILTER @"RWIServiceDeviceConnection"
 
 @implementation LogMonitor
 
@@ -20,6 +20,7 @@
     if (self != nil) {
         _subsystem = subsystem;
         _messageFilter = messageFilter;
+        _stopFilter = @"Stream successfully stopped";
     }
     return self;
 }
@@ -30,7 +31,7 @@
     reader_task = [[NSTask alloc] init];
     reader_task.standardOutput = [NSPipe pipe];
     reader_task.launchPath = @"/usr/bin/log";
-    reader_task.arguments = @[@"stream", @"--predicate", [NSString stringWithFormat:@"(subsystem == \"%@\") && (eventMessage contains \"%@\")", subsystem, messageFilter]];
+    reader_task.arguments = @[@"stream", @"--predicate", [NSString stringWithFormat:@"(subsystem == \"%@\") && ((eventMessage contains \"%@\") || (eventMessage contains \"%@\"))", subsystem, messageFilter, @"Stream successfully stopped"]];
     
     [reader_task setTerminationHandler:^(NSTask *task) {
         // subprocess exited. handle cleanup
@@ -65,6 +66,11 @@
             }
             _num_occurrences += 1;
             //NSLog(@"Lines matched: %ld", (unsigned long)self.num_occurrences);
+        }
+        else if ([line containsString:self.stopFilter])
+        {
+            NSLog(@"Call hangup detected.  Resetting...");
+            _num_occurrences = 0;
         }
         
     }

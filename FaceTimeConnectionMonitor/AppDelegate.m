@@ -17,7 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    //reader_task.arguments = @[@"stream", @"--predicate", @"(subsystem == \"com.apple.AVConference\") && (eventMessage contains \"CalculateVideoTimestamp FORCE\")"];
+    //reader_task.arguments = @[@"stream", @"--predicate", @"(subsystem == \"com.apple.AVConference\") && ((eventMessage contains \"CalculateVideoTimestamp FORCE\") || (eventMessage contains \"Stream successfully stopped\"))"];
 
     //_monitor = [[LogMonitor alloc] initWithSubsystemAndMessageFilter:@"com.apple.WebInspector" messageFilter:@"CURRENTMACHINE"];
     _monitor = [[LogMonitor alloc] initWithSubsystemAndMessageFilter:@"com.apple.AVConference" messageFilter:@"CalculateVideoTimestamp FORCE"];
