@@ -56,7 +56,7 @@
     {
         if ([line containsString:self.messageFilter])
         {
-            NSLog(@"Output: %@", line);
+            //NSLog(@"Output: %@", line);
             if (self.num_occurrences == NOTIFY_THRESHOLD)
             {
                 // notify
@@ -64,7 +64,7 @@
                 [self sendUserNotification];
             }
             _num_occurrences += 1;
-            NSLog(@"Lines matched: %ld", (unsigned long)self.num_occurrences);
+            //NSLog(@"Lines matched: %ld", (unsigned long)self.num_occurrences);
         }
         
     }
@@ -83,13 +83,11 @@
 {
     _logreader = [self createNewLogReader:self.subsystem keyPath:self.messageFilter];
     [_logreader launch];
-//    [_logreader waitUntilExit];
 }
 
 -(void)stop
 {
     [_logreader interrupt];
-//    [_logreader waitUntilExit];
     NSLog(@"Termination status: %d", [_logreader terminationStatus]);
     NSLog(@"Goodbye, beautiful world!");
     _logreader = NULL;

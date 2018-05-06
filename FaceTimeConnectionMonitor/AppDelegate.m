@@ -19,7 +19,7 @@
     
     //reader_task.arguments = @[@"stream", @"--predicate", @"(subsystem == \"com.apple.AVConference\") && (eventMessage contains \"CalculateVideoTimestamp FORCE\")"];
 
-    _monitor = [[LogMonitor alloc] initWithSubsystemAndMessageFilter:@"com.apple.WebInspector" messageFilter:@"CURRENTMACHINE"];
+    //_monitor = [[LogMonitor alloc] initWithSubsystemAndMessageFilter:@"com.apple.WebInspector" messageFilter:@"CURRENTMACHINE"];
     _monitor = [[LogMonitor alloc] initWithSubsystemAndMessageFilter:@"com.apple.AVConference" messageFilter:@"CalculateVideoTimestamp FORCE"];
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     [_monitor start];
