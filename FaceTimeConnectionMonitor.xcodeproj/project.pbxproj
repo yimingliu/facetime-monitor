@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		539450E2209E76C5008A1F1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 539450E1209E76C5008A1F1F /* AppDelegate.m */; };
+		539450E5209E76C5008A1F1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539450E4209E76C5008A1F1F /* ViewController.m */; };
+		539450E7209E76C6008A1F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 539450E6209E76C6008A1F1F /* Assets.xcassets */; };
+		539450EA209E76C6008A1F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539450E8209E76C6008A1F1F /* Main.storyboard */; };
+		539450ED209E76C6008A1F1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 539450EC209E76C6008A1F1F /* main.m */; };
+		539450F6209E76E5008A1F1F /* LogMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 539450F5209E76E5008A1F1F /* LogMonitor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53598416209E7C57008633A7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		539450DD209E76C5008A1F1F /* FaceTimeConnectionMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceTimeConnectionMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		539450E0209E76C5008A1F1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		539450E1209E76C5008A1F1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		539450E3209E76C5008A1F1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		539450E4209E76C5008A1F1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		539450E6209E76C6008A1F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		539450E9209E76C6008A1F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		539450EB209E76C6008A1F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		539450EC209E76C6008A1F1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		539450EE209E76C6008A1F1F /* FaceTimeConnectionMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceTimeConnectionMonitor.entitlements; sourceTree = "<group>"; };
+		539450F4209E76E5008A1F1F /* LogMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogMonitor.h; sourceTree = "<group>"; };
+		539450F5209E76E5008A1F1F /* LogMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogMonitor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		539450DA209E76C5008A1F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		539450D4209E76C5008A1F1F = {
+			isa = PBXGroup;
+			children = (
+				53598416209E7C57008633A7 /* README.md */,
+				539450DF209E76C5008A1F1F /* FaceTimeConnectionMonitor */,
+				539450DE209E76C5008A1F1F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		539450DE209E76C5008A1F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				539450DD209E76C5008A1F1F /* FaceTimeConnectionMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		539450DF209E76C5008A1F1F /* FaceTimeConnectionMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				539450E0209E76C5008A1F1F /* AppDelegate.h */,
+				539450E1209E76C5008A1F1F /* AppDelegate.m */,
+				539450E3209E76C5008A1F1F /* ViewController.h */,
+				539450E4209E76C5008A1F1F /* ViewController.m */,
+				539450F4209E76E5008A1F1F /* LogMonitor.h */,
+				539450F5209E76E5008A1F1F /* LogMonitor.m */,
+				539450E6209E76C6008A1F1F /* Assets.xcassets */,
+				539450E8209E76C6008A1F1F /* Main.storyboard */,
+				539450EB209E76C6008A1F1F /* Info.plist */,
+				539450EC209E76C6008A1F1F /* main.m */,
+				539450EE209E76C6008A1F1F /* FaceTimeConnectionMonitor.entitlements */,
+			);
+			path = FaceTimeConnectionMonitor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		539450DC209E76C5008A1F1F /* FaceTimeConnectionMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 539450F1209E76C6008A1F1F /* Build configuration list for PBXNativeTarget "FaceTimeConnectionMonitor" */;
+			buildPhases = (
+				539450D9209E76C5008A1F1F /* Sources */,
+				539450DA209E76C5008A1F1F /* Frameworks */,
+				539450DB209E76C5008A1F1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceTimeConnectionMonitor;
+			productName = FaceTimeConnectionMonitor;
+			productReference = 539450DD209E76C5008A1F1F /* FaceTimeConnectionMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		539450D5209E76C5008A1F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Yiming Liu";
+				TargetAttributes = {
+					539450DC209E76C5008A1F1F = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 539450D8209E76C5008A1F1F /* Build configuration list for PBXProject "FaceTimeConnectionMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 539450D4209E76C5008A1F1F;
+			productRefGroup = 539450DE209E76C5008A1F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				539450DC209E76C5008A1F1F /* FaceTimeConnectionMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		539450DB209E76C5008A1F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539450E7209E76C6008A1F1F /* Assets.xcassets in Resources */,
+				539450EA209E76C6008A1F1F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		539450D9209E76C5008A1F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539450E5209E76C5008A1F1F /* ViewController.m in Sources */,
+				539450F6209E76E5008A1F1F /* LogMonitor.m in Sources */,
+				539450ED209E76C6008A1F1F /* main.m in Sources */,
+				539450E2209E76C5008A1F1F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		539450E8209E76C6008A1F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				539450E9209E76C6008A1F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		539450EF209E76C6008A1F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		539450F0209E76C6008A1F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		539450F2209E76C6008A1F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = FaceTimeConnectionMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.FaceTimeConnectionMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		539450F3209E76C6008A1F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XLREUF5H62;
+				INFOPLIST_FILE = FaceTimeConnectionMonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.FaceTimeConnectionMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		539450D8209E76C5008A1F1F /* Build configuration list for PBXProject "FaceTimeConnectionMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539450EF209E76C6008A1F1F /* Debug */,
+				539450F0209E76C6008A1F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		539450F1209E76C6008A1F1F /* Build configuration list for PBXNativeTarget "FaceTimeConnectionMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539450F2209E76C6008A1F1F /* Debug */,
+				539450F3209E76C6008A1F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 539450D5209E76C5008A1F1F /* Project object */;
+}
